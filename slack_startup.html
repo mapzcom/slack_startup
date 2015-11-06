@@ -1,0 +1,865 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://www.mapz.com/api/static/css/ol.css' />
+        <script src='https://www.mapz.com/api/static/javascript/lib/3.7.0/openlayers.js' type='text/javascript'></script>
+        <script src='https://code.jquery.com/jquery-1.11.0.min.js' type='text/javascript'></script>
+        <script src='https://www.mapz.com/api/static/javascript/lib/typeahead.bundle.js' type='text/javascript'></script>
+        <style type="text/css">
+
+         /* Change the position of the zoom buttons */
+         .ol-zoom {
+        	left: 18.8em;
+        	top: 0.5em;
+         }
+  /* ol.mapz.control.Search */
+  .mapz-control-search,
+  .mapz-control-search:hover {
+    text-align: left;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .ol-control.mapz-control-search,
+  .ol-control.mapz-control-search:hover {
+    top: 5px;
+    right: 5px;
+    position: absolute;
+  }
+
+  .mapz-control-search input {
+    font-size: 14px;
+    /*font-weight: bold; */
+    border-radius: 4px;
+    color: #464646;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 0 0 10px;
+    vertical-align: middle;
+    /*background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fafafa 0%, #ffffff 100%) repeat scroll 0 0; */
+    border: 1px solid rgb(210,210,210);
+    outline: medium none;
+    width: 400px;
+    box-sizing: border-box;
+    font-family: "HelveticaNeue", "Helvetica";
+  }
+
+  .mapz-control-search .search-results {
+    margin-top: 5px;
+    background-clip: padding-box;
+    background-color: white;
+    border: 1px solid rgb(210,210,210);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(169, 169, 169, 0.5);
+    height: auto;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 5px 5px;
+    position: absolute;
+    width: 400px;
+    z-index: 1000;
+    box-sizing: border-box;
+    font-family: "HelveticaNeue", "Helvetica";
+  }
+
+  .ol-control.mapz-control-search .search-results {
+    position: relative;
+  }
+
+  .search-results div {
+    background-color: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    margin: 5px 5px;
+    border-bottom: 1px solid  #d9d9d9;
+    color: #464646;
+    font-size: 13px;
+  }
+
+  .search-results div span.name,
+  .search-results div span.description {
+    color: #464646;
+    font-size: 13px !important;
+    line-height: 15px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .search-results div:hover {
+    background-color: #f2f2f2;
+    border-radius: 4px;
+  }
+
+  .search-results div.no-results,
+  .search-results div.no-results:hover {
+  /*,
+  .search-results div.requesting,
+  .search-results div.requesting:hover {*/
+    font-size: 13px;
+    border: 0;
+  }
+
+  .search-input-container {
+    position: relative;
+    width: 400px;
+  }
+
+  .search-input-container .clear-button,
+  .search-input-container .clear-button:hover,
+  .search-input-container .clear-button:focus,
+  .search-input-container .requesting {
+    background-color: transparent;
+    border: medium none;
+    position: absolute;
+    right: 2px;
+    top: 0px;
+  }
+
+  .search-input-container .clear-button,
+  .search-input-container .clear-button:hover,
+  .search-input-container .clear-button:focus {
+  cursor: pointer;
+    color: #cccccc;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .search-input-container .clear-button:before {
+    content: "x";
+  }
+
+  .search-input-container .requesting {
+    background-image: url('data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==');
+    height: 16px;
+    width: 16px;
+  }
+
+  .search-input-container .requesting:before {
+    content: " ";
+  }
+
+         /* styles the list */
+         #sticky-overlay {
+          top: 0;
+        	left: 0;
+        	background-color: rgb(255, 255, 255);
+        	text-align: left;
+        	width: 200px;
+        	height: 100%;
+        	overflow-x: scroll;
+        	overflow-y: none;
+        	padding: 20px;
+        	border-radius: 4px;
+        	border: 1px solid rgb(210,210,210);
+        	line-height: 18px;
+        	font-size: 13px;
+         }
+
+         #sticky-overlay h4 {
+        	font-size: 18px;
+            line-height: 26px;
+            color: #ef8214;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            font-weight: 400;
+         }
+
+         #sticky-overlay p {
+            line-height: 18px;
+            font-size: 13px;
+         }
+
+         #sticky-overlay a {
+            text-decoration:none;
+            color: black;
+         }
+
+         #sticky-overlay a:hover {
+            text-decoration:underline;
+            color:#ef8214;
+         }
+
+         /* styling for devices with screen width less than 575px */
+         @media (max-width: 575px) {
+           #sticky-overlay {
+              width: 200px;
+              padding: 10px;
+           }
+           #sticky-overlay h4 {
+              font-size: 18px;
+              margin-bottom: 5px;
+           }
+
+           #sticky-overlay p {
+              margin-bottom: 5px;
+           }
+
+           #sticky-overlay p,
+           #sticky-overlay a,
+           #sticky-overlay a:visited
+           #sticky-overlay a:hover {
+              font-size: 9px;
+              line-height: 12px;
+           }
+
+           #sticky-overlay .logo {
+              height: 12px;
+           }
+         }
+
+         /* styles the popup container */
+         .ol-popup {
+        	position: absolute;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid rgb(210,210,210);
+            bottom: 30px;
+            left: -50px;
+            font-size: -2;
+         }
+
+         /* The next three definitions styles the popup position flag */
+         .ol-popup:after, .ol-popup:before {
+            top: 100%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+         }
+
+         /* styles the white part of the position flag. Position of flag can be changed by changing "left" value */
+         .ol-popup:after {
+            border-top-color: white;
+            border-width: 10px;
+            left: 56px;
+            margin-left: -10px;
+         }
+
+         /* styles the gray part (border) of the position flag. Position of flag can be changed by changing "left" value */
+         .ol-popup:before {
+            border-top-color: #cccccc;
+            border-width: 11px;
+            left: 56px;
+            margin-left: -11px;
+         }
+
+         /* The next two definitions styles the popup close button */
+         .ol-popup .close-button {
+            position: absolute;
+            right: 5px;
+            top: 0px;
+            cursor: pointer;
+            color: #cccccc;
+            font-weight: bold;
+         }
+
+         .ol-popup .close-button:before {
+            content: "x";
+         }
+
+         /* Hide templates container */
+         .template-container {
+            display: none;
+         }
+
+         /* Definitions below styles the content elements. */
+         #popup-content.detail {
+            width: 250px;
+         }
+
+         #popup-content.overview {
+            width: 350px;
+            max-height: 200px;
+            overflow-x: none;
+            overflow-y: auto;
+         }
+
+         #popup-content div {
+            clear: both;
+         }
+
+         #popup-content h4,
+         #popup-content h5 {
+            color: #ef8214;
+            font-weight: 400;
+            margin-bottom: 9px;
+            margin-top: 0px;
+         }
+
+         #popup-content h5 {
+            margin-top: 4px;
+            margin-bottom: 3px;
+         }
+
+         #popup-content p,
+         #popup-content i,
+         #popup-content span,
+         #popup-content .contact div,
+         #popup-content a {
+            font-size: 11px;
+            line-height: 17px;
+         }
+
+         #popup-content p {
+            color: #464646;
+         }
+
+         #popup-content a,
+         #popup-content a:visited
+         #popup-content a:hover {
+            color: #ef8214;
+            text-decoration: none;
+            display: block;
+         }
+
+         #popup-content img {
+            float: left;
+            margin-top: 10px;
+            margin-right: 5px;
+            border: 1px solid #ffffff;
+         }
+
+         #popup-content .contact {
+            display: inline-block;
+         }
+
+         #popup-content.overview img {
+            margin-bottom: 10px;
+         }
+
+         #popup-content.overview > div > div:last-of-type > img {
+            margin-bottom: 0;
+         }
+
+         .detail-info {
+            cursor: pointer;
+         }
+
+         #popup-content.detail div.phone-container,
+         #popup-content.detail div.fax-container {
+            display: inline-block;
+         }
+
+         #popup-content.detail .contact {
+            width: 260px;
+         }
+
+         /* styling for devices with screen width less than 575px */
+         @media (max-width: 575px) {
+           .ol-popup {
+              width: 330px;
+              left: -25px;
+              padding: 10px;
+           }
+
+           .ol-popup::before {
+              left: 24px;
+           }
+
+           .ol-popup::after {
+              left: 24px;
+           }
+
+           .ol-popup .close-button {
+              font-size: 10px;
+           }
+
+           #popup-content h4 {
+              font-size: 10px;
+              margin-bottom: 0;
+           }
+
+           #popup-content h5 {
+              font-size: 9px;
+              margin-bottom: 0;
+           }
+
+           #popup-content p {
+              margin-bottom: 5px;
+           }
+
+           #popup-content p,
+           #popup-content i,
+           #popup-content span,
+           #popup-content .contact div,
+           #popup-content a {
+              font-size: 9px;
+              line-height: 12px;
+           }
+
+           #popup-content.detail a {
+              margin-top: 2px;
+           }
+
+           #popup-content img {
+              margin-right: 10px;
+           }
+
+           #popup-content.detail .contact {
+              width: 180px;
+              line-height: 12px;
+           }
+
+           #popup-content.overview h5,
+           #popup-content.overview .contact div {
+              margin-bottom: 7px;
+           }
+
+           #popup-content.detail .contact div {
+              display: inline-block;
+           }
+
+           #popup-content.detail div.phone-container,
+           #popup-content.detail div.fax-container {
+              display: block;
+           }
+
+           #popup-content.overview h5 {
+              font-size: 10px;
+           }
+
+           #popup-content.detail .image {
+              width: 120px;
+              height: auto;
+           }
+
+           #popup-content .logo {
+              height: 12px;
+              bottom: 34px;
+              right: 20px;
+           }
+         }
+         .slackdemomap {
+            height: 100%;
+            width: 100%;
+            font-family: "HelveticaNeue", "Helvetica";
+         }
+         body {
+            font-family:Arial, sans-serif;
+         }
+        </style>
+    </head>
+    <body>
+      <div id="map" class="slackdemomap">
+        <!-- Stiky Overlay on the top of the map -->
+        <div id="sticky-overlay" class="ol-control">
+          <h4>#startup</h4>
+          <div id="list-template" style="display: none">
+             <a class="detail-info">
+            	<span class="slackusername"></span>
+            	(<span class="name"></span>)
+             </a>
+             <hr>
+          </div>
+        </div>
+
+        <!-- Popup with close button -->
+        <div id="popup" class="ol-popup">
+          <div class="close-button"></div>
+          <div id="popup-content"></div>
+        </div>
+      </div>
+
+      <div class="template-container">
+      <!-- Structure of the detail-template -->
+        <div class="detail-template">
+          <h4 class="name"></h4>
+          <div class="contact">
+            <div class="role-container">
+              <span class="role"></span>
+            </div>
+            <div>
+              <span class="slackusername"></span>
+            </div>
+            <h5>Competencies</h5>
+            <div>
+              <span class="competencies"></span>
+            </div>
+            <h5>Contact</h5>
+            <div class="company"></div>
+              <div class="location-container">
+                <span class="location"></span>
+                <a class="email"></a>
+                <a class="homepage"></a>
+              </div>
+                <img class="image" align="center" valign="middle" width="auto" height="30px"/>
+          </div>
+        </div>
+      <!-- Structure of the overview-template -->
+        <div class="overview-template">
+          <div>
+            <h5 class="name"></h5>
+            <div>
+              <i>Slack Username:</i>
+              <span class="slackusername"></span>
+            </div>
+            <div>
+              <i>Competencies:</i>
+              <span class="competencies"></span>
+            </div>
+              <a class="detail-info">detailed information</a>
+              <hr>
+            </div>
+        </div>
+      </div>
+
+     <script type="text/javascript">
+      // Create background layer
+      var baseLayer = new ol.layer.Tile({
+        source: new ol.source.XYZ({
+          attributions: [new ol.Attribution({
+            html: '&nbsp;&nbsp;&copy; 2015 <a target="_blank" href="http://www.mapz.com">mapz.com </a>\
+              - Map Data: <a target="_blank" href="http://openstreetmap.org" >OpenStreetMap</a>\
+              (<a href="http://opendatacommons.org/licenses/odbl/1.0/" target="_blank">ODbL</a>)'
+          })],
+          tilePixelRatio: 2,
+          url:'https://tiles.mapz.com/mapproxy/v1/startup-28e8de99/tiles/1.0.0/osm_gray_hq/EPSG3857/{z}/{x}/{-y}.jpeg'
+        })
+      });
+
+      // Create a vector layer with search
+      var resultSource = new ol.source.Vector();
+      resultSource.setProperties({'searchLayer': true});
+
+      var searchControl = new ol.mapz.control.FileSearch({
+        resultSource: resultSource,
+        // define that we search in a geojson
+        searchType: 'geojson',
+        // define the properties for the search
+        searchProperties: ['slackusername', 'name', 'competencies'],
+        // template for display results
+        displayResult: '{-slackusername-} ({-name-}) {-competencies-}',
+        // URL to json file with search suggestions
+        searchUrl: 'slack_startup_users.json',
+        // Max number of suggestions to be displayed
+        limit: 10,
+        // Minimum character length before suggestions shown
+        minLength: 2,
+        // Text for the placeholder
+        placeholder: 'Search for slack #startup user',
+        // Zoomlevel to load result
+        zoomLevel: 7,
+        // Text if nothing was found
+        noResultText: 'no result found',
+        // callback function to overwrite search result function
+        resultCallback: function(result) {
+          vectorSource.forEachFeature(function(feature) {
+            var properties = feature.getProperties();
+            if (properties.slackusername === result.properties.slackusername) {
+              showPopUp([feature]);
+              map.getView().setCenter(feature.getGeometry().getCoordinates());
+              map.getView().setZoom(11);
+            }
+          });
+        }
+      });
+
+      var vectorSource = new ol.source.Vector({
+        url: "slack_startup_users.json",
+        format: new ol.format.GeoJSON()
+      });
+
+      // Create a vector layer with clustring source and add a styling
+      var clusters = new ol.layer.Vector({
+        // Wrap vector source in cluster source
+        source: new ol.source.Cluster({
+          distance: 40,
+          source: vectorSource
+        }),
+        // Define cluster style
+        style: function(feature, resolution) {
+          var size = feature.get('features').length;
+          if (size === 1) {
+          // Clustered features containing only one feature are treated as normal features
+            return [new ol.style.Style({
+               image: new ol.style.Icon({
+                 src: 'slack_user.svg',
+                 scale: 2.0,
+                 // set anchor for icon
+                 // anchor: [0, 0],
+                 // anchorYUnits: 'pixels',
+                 // anchorXUnits: 'pixels'
+               }),
+            })];
+          }
+          // Otherweise display number of clustered features in the icon
+            return [new ol.style.Style({
+               geometry: feature.getGeometry(),
+               image: new ol.style.Icon({
+                 src: 'slack_cluster.svg',
+                 scale: 2.0,
+               }),
+               text: new ol.style.Text({
+                 text: size.toString(),
+                 textAlign: 'center',
+                 // textBaseline: 'middle',
+                 offsetX: 0,
+                 offsetY: -23,
+                 rotation: 0,
+                 fill: new ol.style.Fill({
+                   color: '#aa1010'
+                 }),
+                 stroke: new ol.style.Stroke({
+                   color: '#CCCCCC'
+                 })
+               })
+            })];
+        }
+      });
+
+      var popup = $('#popup');
+      var popupContent = $('#popup-content');
+
+      var detailTemplate = $('.template-container .detail-template');
+      var overviewTemplate = $('.template-container .overview-template');
+
+      var popupOverlay = new ol.Overlay(({
+        element: popup[0],
+        offset: [0, -14],
+        autoPan: true,
+        autoPanMargin: 5,
+        autoPanAnimation: {
+          duration: 250
+        }
+        }));
+
+      var map = new ol.Map({
+        logo: false,
+        controls: ol.control.defaults().extend([searchControl]),
+        target: document.getElementById('map'),
+        layers: [
+          baseLayer,
+          clusters,
+          new ol.layer.Vector({
+            source: resultSource,
+            style: new ol.style.Style({
+              image: new ol.style.Icon(({
+              src: 'slack_user_search.svg',
+              scale: 2.0,
+              // anchor: [0, 0],
+              // anchorYUnits: 'pixels',
+              // anchorXUnits: 'pixels'
+              }))
+            })
+          })
+        ],
+        overlays: [popupOverlay],
+        view: new ol.View({
+          center: [0, 0],
+          // Define lowest and highest zoom level
+          minZoom: 3,
+          maxZoom: 18
+        })
+      });
+
+      map.getView().fit(ol.proj.transformExtent(
+        [-23.335302, 37.780334,39.110987, 62.18144],
+        'EPSG:4326', 'EPSG:3857'
+      ), map.getSize());
+
+      // Define the function to show the popup (detail or overview)
+      function showPopUp(features) {
+        if (features === undefined) {
+          return;
+        }
+        popupContent.empty();
+        popupContent
+          .removeClass('detail')
+          .removeClass('overview');
+          // For 1 feature, show the detail popup
+          if (features.length === 1) {
+            popupContent.addClass('detail');
+            popupContent.append(
+              createDetailPopup(features[0])
+            );
+          }
+          // Otherwise show the overview popup
+          else {
+            popupContent.addClass('overview');
+            popupContent.append(
+              createOverviewPopup(features)
+            );
+          }
+        popup.css('display', '');
+        popupOverlay.setPosition(features[0].getGeometry().getCoordinates());
+      }
+
+      map.on('click', function(evt) {
+        // When click in map, look for a feature
+        var feature = map.forEachFeatureAtPixel(evt.pixel,
+          function(feature, layer) {
+            // check if layer is searchlayer then do not return a feautre
+            var properties = layer.getSource().getProperties();
+            if (!properties.searchLayer) {
+            return feature;
+            }
+          }
+        );
+        // Show the popup
+        if (feature) {
+          var features = feature.get('features');
+          showPopUp(features);
+        }
+        // Hide the popup
+        else {
+          popup.css('display', 'none');
+        }
+      });
+
+      // change mouse cursor when over marker
+      map.on('pointermove', function(e) {
+        var pixel = map.getEventPixel(e.originalEvent);
+        var hit = map.hasFeatureAtPixel(pixel);
+        map.getTarget().style.cursor = hit ? 'pointer' : '';
+      });
+
+
+
+      var createListPopup = function(features) {
+        // Create a container
+        var container = $('<div></div>');
+        features.forEach(function(feature) {
+          // Clone the template
+          var list = listTemplate.clone();
+          // Get feature properties
+          var name = feature.get('name');
+          var imageName = feature.get('imageName') + '.png';
+          var slackusername = feature.get('slackusername');
+          var competencies = feature.get('competencies');
+          var contact = feature.get('contact');
+          // Fill the template
+          list.find('.image')
+            .attr('src', imageBaseUrl + '/' + imageName);
+          list.find('.name')
+            .text(name);
+          list.find('.slackusername')
+            .text(slackusername);
+          list.find('.competencies')
+            .text(competencies);
+          list.find('.company')
+            .text(contact.company);
+          list.find('.location')
+            .text(contact.location);
+          list.find('.detail-info')
+            .data('coordinates', feature.get('geometry').getCoordinates());
+          container.append(list);
+          list.find('.detail-info').click(function() {
+            map.once('moveend', function() {
+              showPopUp([feature]);
+            });
+            var coordinates = $(this).data('coordinates');
+            map.getView().setCenter(coordinates);
+            map.getView().setZoom(16);
+          })
+        });
+        return container;
+      };
+
+      var createOverviewPopup = function(features) {
+        // Create a container
+        var container = $('<div></div>');
+        features.forEach(function(feature) {
+          // Clone the template
+          var overview = overviewTemplate.clone();
+          // Get feature properties
+          var name = feature.get('name');
+          var slackusername = feature.get('slackusername');
+          var competencies = feature.get('competencies');
+          var contact = feature.get('contact');
+          // Fill the template
+          overview.find('.name')
+            .text(name);
+          overview.find('.slackusername')
+            .text(slackusername);
+          overview.find('.competencies')
+            .text(competencies);
+          overview.find('.company')
+            .text(contact.company);
+          overview.find('.location')
+            .text(contact.location);
+          overview.find('.detail-info')
+            .data('coordinates', feature.get('geometry').getCoordinates());
+          container.append(overview);
+          overview.find('.detail-info').click(function() {
+            map.once('moveend', function() {
+              showPopUp([feature]);
+            });
+            var coordinates = $(this).data('coordinates');
+            map.getView().setCenter(coordinates);
+            map.getView().setZoom(16);
+          });
+        });
+        return container;
+      };
+
+      var createDetailPopup = function(feature) {
+        // Clone the template
+        var details = detailTemplate.clone();
+        // Get feature properties
+        var name = feature.get('name');
+        var imageURL = feature.get('imageURL');
+        var slackusername = feature.get('slackusername');
+        var competencies = feature.get('competencies');
+        var contact = feature.get('contact');
+        // Fill the template
+        details.find('.image')
+          .prop('src', imageURL);
+        details.find('.name')
+          .text(name);
+        details.find('.slackusername')
+          .text(slackusername);
+        details.find('.competencies')
+          .text(competencies);
+        details.find('.company')
+          .text(contact.company);
+        details.find('.role')
+          .text(contact.role);
+        details.find('.location')
+          .text(contact.location);
+        details.find('.email')
+          .attr('href', 'mailto:' + contact.email)
+          .text(contact.email);
+        details.find('.homepage')
+          .attr('href', 'http://' + contact.homepage)
+          .text(contact.homepage);
+        return details;
+      };
+
+      // Close button
+      popup.find('.close-button').click(function() {
+        popup.css('display', 'none');
+      });
+
+      //  Sticky overlay element
+      var stickyOverlayElement = document.getElementById('sticky-overlay');
+      var stickyOverlay = new ol.control.Control({element: stickyOverlayElement});
+      map.addControl(stickyOverlay);
+
+      vectorSource.once('change',function(e){
+        vectorSource.forEachFeature(function(feature) {
+          // copy template for each feature and add text
+          var listTemplate = jQuery('#list-template').clone();
+          listTemplate.find('.slackusername').text(feature.get('slackusername'));
+          listTemplate.find('.name').text(feature.get('name'));
+          // add coordiantes and click function to more text link
+          listTemplate.find('.detail-info')
+    	  .data('coordinates', feature.get('geometry').getCoordinates());
+          listTemplate.find('.detail-info').click(function() {
+            map.once('moveend', function() {
+              showPopUp([feature]);
+            });
+            var coordinates = $(this).data('coordinates');
+            map.getView().setCenter(coordinates);
+            map.getView().setZoom(5);
+          });
+          // add finished template to html overlay
+          jQuery(stickyOverlayElement).append(listTemplate);
+          // show template after it was added
+          listTemplate.show();
+        });
+      });
+     </script>
+    </body>
+</html>

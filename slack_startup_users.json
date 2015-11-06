@@ -1,0 +1,125 @@
+{
+    "features": [
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    4.46276303499529,
+                    51.9072988444562
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Leon Pals",
+                "imageURL": "http://startupfoundation.co/wp-content/uploads/2014/12/startup1.png",
+                "contact": {
+                    "company": "Startup Foundation",
+                    "role": "Chairman, founder",
+                    "location": "Puntegaalstraat 259, 3024 EB Rotterdam, Netherlands",
+                    "email": "leon@startupfoundation.co",
+                    "homepage": "http://startupfoundation.co/"
+                },
+                "competencies": "Startups, community building, Events, Lean Startup, Customer Development, Effectuation, #NLtech, multi media desing, business development",
+                "slackusername": "@leon"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    6.8992628103,
+                    51.0881646948
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Matthias Breddin",
+                "imageURL": "https://www.lunetics.com/lunetics_logo.png",
+                "contact": {
+                    "company": "Lunetics",
+                    "role": "",
+                    "location": "Peter-Fechter-Weg 1, 40789 Monheim, Germany",
+                    "email": "mb@lunetics.com",
+                    "homepage": "www.lunetics.com"
+                },
+                "competencies": "",
+                "slackusername": "@lunetics"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    6.955446158081793,
+         			50.919193644791605
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Tim Kober",
+                "imageURL": "https://www.mapz.com/static/assets/images/logo.png",
+                "contact": {
+                    "company": "Kober-Kümmerly+Frey Media AG",
+                    "role": "Founder & CEO",
+                    "location": "Rolandstraße 83, 50677 Köln, Germany",
+                    "email": "info@mapz.com",
+                    "homepage": "https://www.mapz.com/api"
+                },
+                "competencies": "maps, mapdesign",
+                "slackusername": "@mapz"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    6.957947799,
+                    50.9398189948
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Ömer Akyürek",
+                "imageURL": "http://byndapp.com/png/Logo.svg",
+                "contact": {
+                    "company": "Bynd UG",
+                    "role": "Co-Founder & CEO",
+                    "location": "Am Hof 20-26, 50667 Cologne, Germany",
+                    "email": "oemer@byndapp.com",
+                    "homepage": "byndapp.com"
+                },
+                "competencies": "Marketing, Product Development, Anything related to starting & running a Startup",
+                "slackusername": "@oemer"
+            }
+        }
+    ],
+    "properties": {
+        "bbox": "8.155937,49.608688,8.165501,49.612154",
+        "layername": "osm"
+    },
+    "type": "FeatureCollection"
+}
