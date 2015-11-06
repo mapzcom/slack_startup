@@ -9,4 +9,4 @@ Feel free to add your personal data to the json file if you are a member of the 
 
 # Help to make the code better
 
-There is a lot of room for improvement regarding responsiveness and cool features. Just go for it. The map is based on the API of the mapping service https://www.mapz.com which is basically a custom build of OpenLayers 3. You can use the code on localhost without an API key. If you need a API Key to install the map on a public server, just send a short request to api.key@mapz.com and tell us the domain.
+There is a lot of room for improvement regarding responsiveness and cool features. Just go for it. The map is based on the API of the mapping service https://www.mapz.com/api which is basically a custom build of OpenLayers 3. You can use the code on localhost without an API key. If you need a API Key to install the map on a public server, just send a short request to api.key@mapz.com and tell us the domain.
