@@ -10,6 +10,35 @@
             },
             "geometry": {   
                 "coordinates": [
+                    7.628691,
+                    51.972026
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Christoph Jung",
+                "imageURL": "nologo.png",
+                "contact": {
+                    "company": "",
+                    "role": "Student, Startup Enthusiast",
+                    "location": "Kettelerstraße 48, 48147 Münster, Germany",
+                    "email": "christoph.j.jung@gmail.com",
+                    "homepage": ""
+                },
+                "competencies": "Economics, FinTech, Finance, Statistics, Excel",
+                "slackusername": "@christoph"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {   
+                "coordinates": [
                     4.46276303499529,
                     51.9072988444562
                 ],
@@ -85,6 +114,35 @@
                 },
                 "competencies": "maps, mapdesign",
                 "slackusername": "@mapz"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    11.59321,
+                    48.12663
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Max Ott",
+                "imageURL": "nologo.png",
+                "contact": {
+                    "company": "Made for Use",
+                    "role": "",
+                    "location": "Munich, Germany",
+                    "email": "max.ott@me.com",
+                    "homepage": "made-for-use.com"
+                },
+                "competencies": "No comment ;-)",
+                "slackusername": "@max.ott"
             }
         },
         {
