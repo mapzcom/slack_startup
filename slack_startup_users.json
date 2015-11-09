@@ -8,7 +8,7 @@
                 },
                 "type": "name"
             },
-            "geometry": {
+            "geometry": {   
                 "coordinates": [
                     4.46276303499529,
                     51.9072988444562
@@ -23,7 +23,7 @@
                     "role": "Chairman, founder",
                     "location": "Puntegaalstraat 259, 3024 EB Rotterdam, Netherlands",
                     "email": "leon@startupfoundation.co",
-                    "homepage": "http://startupfoundation.co/"
+                    "homepage": "startupfoundation.co"
                 },
                 "competencies": "Startups, community building, Events, Lean Startup, Customer Development, Effectuation, #NLtech, multi media desing, business development",
                 "slackusername": "@leon"
@@ -81,7 +81,7 @@
                     "role": "Founder & CEO",
                     "location": "Rolandstraße 83, 50677 Köln, Germany",
                     "email": "info@mapz.com",
-                    "homepage": "https://www.mapz.com/api"
+                    "homepage": "www.mapz.com/api"
                 },
                 "competencies": "maps, mapdesign",
                 "slackusername": "@mapz"
