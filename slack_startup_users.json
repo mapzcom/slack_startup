@@ -8,6 +8,35 @@
                 },
                 "type": "name"
             },
+            "geometry": {
+                "coordinates": [
+                    9.72047,
+                    52.36823
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Björn Zinkler",
+                "imageURL": "http://zinkler-brandes.com/images/ui/zinklerbrandes_logo.png",
+                "contact": {
+                    "company": "Zinkler & Brandes",
+                    "role": "Entrepreneur/CEO",
+                    "location": "Schwarzer Bär 2, 30449 Hannover, Germany",
+                    "email": "bz@zinkler-brandes.com",
+                    "homepage": "zinkler-brandes.com"
+                },
+                "competencies": "Software Development, Project Management, Bootstrapping",
+                "slackusername": "@bz"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
             "geometry": {   
                 "coordinates": [
                     7.628691,
@@ -39,6 +68,35 @@
             },
             "geometry": {   
                 "coordinates": [
+                    7.0466,
+                    50.866
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Dr. Christian Lackas",
+                "imageURL": "https://www.invicro.com/wp-content/uploads/2013/06/new-logo-invicro-FC.png",
+                "contact": {
+                    "company": "inviCRO",
+                    "role": "Co-Founder, Managing Partner",
+                    "location": "51143 Köln, Germany",
+                    "email": "",
+                    "homepage": "www.invicro.com"
+                },
+                "competencies": "Medical Imaging, Software development, Bioinformatics, Image processing",
+                "slackusername": "@lackas"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {   
+                "coordinates": [
                     4.46276303499529,
                     51.9072988444562
                 ],
@@ -56,6 +114,35 @@
                 },
                 "competencies": "Startups, community building, Events, Lean Startup, Customer Development, Effectuation, #NLtech, multi media desing, business development",
                 "slackusername": "@leon"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {   
+                "coordinates": [
+                    103.852037,
+                    1.290452
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Leon Lim Jiu He",
+                "imageURL": "nologo.png",
+                "contact": {
+                    "company": "",
+                    "role": "Founder",
+                    "location": "Singapore",
+                    "email": "leonlimjh@gmail.com",
+                    "homepage": ""
+                },
+                "competencies": "No comment ;-)",
+                "slackusername": "@leonlim"
             }
         },
         {
@@ -143,6 +230,93 @@
                 },
                 "competencies": "No comment ;-)",
                 "slackusername": "@max.ott"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    9.942133,
+                    53.544398
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Olcay Hasanoglu",
+                "imageURL": "nologo.png",
+                "contact": {
+                    "company": "codecentric AG",
+                    "role": "Agile Programm Manager - Coach",
+                    "location": "Große Elbstraße 14,  22767 Hamburg, Germany",
+                    "email": "ohasanoglu@gmail.com",
+                    "homepage": ""
+                },
+                "competencies": "Agile Transformtion, Programm Management",
+                "slackusername": "@ohasanoglu"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    6.81291,
+                    49.31698
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Orlando Policicchio",
+                "imageURL": "https://www.company-mood.com/assets/logos/company_mood_logo-b537e901c34099ac41c25aa1255efe5a.png",
+                "contact": {
+                    "company": "CompanyMood",
+                    "role": "Co-Founder",
+                    "location": "Tempelstraße 7, 66773 Schwalbach, Germany",
+                    "email": "hello@company-mood.com",
+                    "homepage": "www.company-mood.com"
+                },
+                "competencies": "SEO, Product Development, Marketing",
+                "slackusername": "@orlandopolic"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {   
+                "coordinates": [
+                    100.58117,
+                    13.73063
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Tobias Mühl",
+                "imageURL": "https://i.imgur.com/K4FjBjm.jpg",
+                "contact": {
+                    "company": "",
+                    "role": "",
+                    "location": "Thong Lo, Bangkok, Thailand",
+                    "email": "tobias@muehl.io",
+                    "homepage": "www.muehl.io"
+                },
+                "competencies": "Development, Webdesign, Hosting, Javascript, Robotics",
+                "slackusername": "@tobias"
             }
         },
         {
