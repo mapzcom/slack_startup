@@ -10,35 +10,6 @@
             },
             "geometry": {
                 "coordinates": [
-                    9.933884,
-                    51.533170
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "name": "Farhad Omid",
-                "imageURL": "nologo.png",
-                "contact": {
-                    "company": "Eddyson GmbH",
-                    "role": "Software Engineer",
-                    "location": "37073 Goettingen, Germany",
-                    "email": "farhadomid@gmail.com",
-                    "homepage": "frhd.me"
-                },
-                "competencies": "Full-Stack Software Development @eddyson.de, Management",
-                "slackusername": "@frhd"
-            }
-        },        
-        {
-            "type": "Feature",
-            "crs": {
-                "properties": {
-                    "name": "EPSG:4326"
-                },
-                "type": "name"
-            },
-            "geometry": {
-                "coordinates": [
                     9.72047,
                     52.36823
                 ],
@@ -85,6 +56,93 @@
                 },
                 "competencies": "Economics, FinTech, Finance, Statistics, Excel",
                 "slackusername": "@christoph"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    7.08989,
+                    50.74363
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "David Schmithüsen",
+                "imageURL": "nologo.png",
+                "contact": {
+                    "company": "Dipl. Inform David Schmithüsen",
+                    "role": "Founder",
+                    "location": "53111 Bonn, Germany",
+                    "email": "coach@schmithuesen.net",
+                    "homepage": ""
+                },
+                "competencies": "Systemic Coaching, Consulting for Agile Softwaredevelopment, Organisational Development, Coaching of Leaders",
+                "slackusername": "@david_schmithuesen"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    9.933884,
+                    51.533170
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Farhad Omid",
+                "imageURL": "nologo.png",
+                "contact": {
+                    "company": "Eddyson GmbH",
+                    "role": "Software Engineer",
+                    "location": "37073 Goettingen, Germany",
+                    "email": "farhadomid@gmail.com",
+                    "homepage": "frhd.me"
+                },
+                "competencies": "Full-Stack Software Development @eddyson.de, Management",
+                "slackusername": "@frhd"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    101.69046,
+                    3.15286
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Giulia Cian Seren",
+                "imageURL": "nologo.png",
+                "contact": {
+                    "company": "Jobbatical + Freelance",
+                    "role": "Head of Sales",
+                    "location": "Kuala Lumpur",
+                    "email": "g.cianseren@gmail.com",
+                    "homepage": "jobbatical.com"
+                },
+                "competencies": "Marketing, Sales, PR, Training",
+                "slackusername": "@giuli"
             }
         },
         {
@@ -242,6 +300,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    6.812880,
+                    49.316990
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Markus Schwed",
+                "imageURL": "https://www.company-mood.com/assets/logos/company_mood_logo@2.png",
+                "contact": {
+                    "company": "CompanyMood",
+                    "role": "Co-Founder & CEO",
+                    "location": "Tempelstrasse 7, 66773 Schwalbach, Germany",
+                    "email": "hello@company-mood.com",
+                    "homepage": "https://www.company-mood.com"
+                },
+                "competencies": "Software Development (spec. Ruby, Rails, Go, JS, EmberJS), HRTech",
+                "slackusername": "@markus.schwed"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     11.59321,
                     48.12663
                 ],
@@ -300,6 +387,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    6.957947799,
+                    50.9398189948
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Ömer Akyürek",
+                "imageURL": "http://byndapp.com/png/Logo.svg",
+                "contact": {
+                    "company": "Bynd UG",
+                    "role": "Co-Founder & CEO",
+                    "location": "Am Hof 20-26, 50667 Cologne, Germany",
+                    "email": "oemer@byndapp.com",
+                    "homepage": "byndapp.com"
+                },
+                "competencies": "Marketing, Product Development, Anything related to starting & running a Startup",
+                "slackusername": "@oemer"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     6.81291,
                     49.31698
                 ],
@@ -346,64 +462,6 @@
                 },
                 "competencies": "Development, Webdesign, Hosting, Javascript, Robotics",
                 "slackusername": "@tobias"
-            }
-        },
-        {
-            "type": "Feature",
-            "crs": {
-                "properties": {
-                    "name": "EPSG:4326"
-                },
-                "type": "name"
-            },
-            "geometry": {
-                "coordinates": [
-                    6.957947799,
-                    50.9398189948
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "name": "Ömer Akyürek",
-                "imageURL": "http://byndapp.com/png/Logo.svg",
-                "contact": {
-                    "company": "Bynd UG",
-                    "role": "Co-Founder & CEO",
-                    "location": "Am Hof 20-26, 50667 Cologne, Germany",
-                    "email": "oemer@byndapp.com",
-                    "homepage": "byndapp.com"
-                },
-                "competencies": "Marketing, Product Development, Anything related to starting & running a Startup",
-                "slackusername": "@oemer"
-            }
-        },
-        {
-            "type": "Feature",
-            "crs": {
-                "properties": {
-                    "name": "EPSG:4326"
-                },
-                "type": "name"
-            },
-            "geometry": {
-                "coordinates": [
-                    6.812880,
-                    49.316990
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "name": "Markus Schwed",
-                "imageURL": "https://www.company-mood.com/assets/logos/company_mood_logo@2.png",
-                "contact": {
-                    "company": "CompanyMood",
-                    "role": "Co-Founder & CEO",
-                    "location": "Tempelstrasse 7, 66773 Schwalbach, Germany",
-                    "email": "hello@company-mood.com",
-                    "homepage": "https://www.company-mood.com"
-                },
-                "competencies": "Software Development (spec. Ruby, Rails, Go, JS, EmberJS), HRTech",
-                "slackusername": "@markus.schwed"
             }
         }
     ],
