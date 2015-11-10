@@ -347,6 +347,35 @@
                 "competencies": "Marketing, Product Development, Anything related to starting & running a Startup",
                 "slackusername": "@oemer"
             }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    6.812880,
+                    49.316990
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Markus Schwed",
+                "imageURL": "https://www.company-mood.com/assets/logos/company_mood_logo@2.png",
+                "contact": {
+                    "company": "CompanyMood",
+                    "role": "Co-Founder & CEO",
+                    "location": "Tempelstrasse 7, 66773 Schwalbach, Germany",
+                    "email": "hello@company-mood.com",
+                    "homepage": "https://www.company-mood.com"
+                },
+                "competencies": "Software Development (spec. Ruby, Rails, Go, JS, EmberJS), HRTech",
+                "slackusername": "@markus.schwed"
+            }
         }
     ],
     "properties": {
