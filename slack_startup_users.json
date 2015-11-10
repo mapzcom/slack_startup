@@ -10,6 +10,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    9.933884,
+                    51.533170
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Farhad Omid",
+                "imageURL": "nologo.png",
+                "contact": {
+                    "company": "Eddyson GmbH",
+                    "role": "Software Engineer",
+                    "location": "37073 Goettingen, Germany",
+                    "email": "farhadomid@gmail.com",
+                    "homepage": "frhd.me"
+                },
+                "competencies": "Full-Stack Software Development, Company Management",
+                "slackusername": "@frhd"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     9.72047,
                     52.36823
                 ],
