@@ -153,6 +153,35 @@
                 },
                 "type": "name"
             },
+            "geometry": {
+                "coordinates": [
+                    -122.41948,
+                    37.77958
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Kevin Weber",
+                "imageURL": "https://www.gravatar.com/avatar/9d876cfd1fed468f71c84d26ca0e9e33?d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536&s=172",
+                "contact": {
+                    "company": "",
+                    "role": "",
+                    "location": "",
+                    "email": "",
+                    "homepage": "kevinw.de"
+                },
+                "competencies": "Development, Marketing, Strategy, Design, UX, AngularJS",
+                "slackusername": "@kevinweber"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
             "geometry": {   
                 "coordinates": [
                     7.0466,
