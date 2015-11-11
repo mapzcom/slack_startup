@@ -10,6 +10,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    24.82105,
+                    59.42650
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Alexander Korenevski",
+                "imageURL": "whitescape.png",
+                "contact": {
+                    "company": "Whitescape",
+                    "role": "CEO",
+                    "location": "Kase tn 7a, 12011 Tallinn, Estonia",
+                    "email": "alexander@whitescape.com",
+                    "homepage": "whitescape.com"
+                },
+                "competencies": "Management",
+                "slackusername": "@akorenevski"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     9.72047,
                     52.36823
                 ],
