@@ -1,4 +1,4 @@
-# slack_startup map
+# slack startup map
 Interactive map of the #startup community on slack
 
 Just point your browser to https://www.mapz.com/static/startup/slack_startup.html to see the members of the community or search for particular skills of the members. Not all members are included yet, the project just started. It is driven by the community and growing.
