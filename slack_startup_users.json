@@ -501,6 +501,35 @@
                 },
                 "type": "name"
             },
+            "geometry": {
+                "coordinates": [
+                    11.78659,
+                    49.63958
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "David Brown",
+                "imageURL": "https://www.thebgn.com/wp-content/uploads/2015/02/Site_Logo.png",
+                "contact": {
+                    "company": "The BGN LLC",
+                    "role": "Founder",
+                    "location": "Sudlager 2209, 92249 Vilseck, Germany",
+                    "email": "David.brown68@thebgn.com",
+                    "homepage": "www.thebgn.com"
+                },
+                "competencies": "Project Management, UX Development, Wire Framing",
+                "slackusername": "@S33br0wnb0x"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
             "geometry": {   
                 "coordinates": [
                     100.58117,
@@ -520,6 +549,35 @@
                 },
                 "competencies": "Development, Webdesign, Hosting, Javascript, Robotics",
                 "slackusername": "@tobias"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {   
+                "coordinates": [
+                    11.68640,
+                    48.13430
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Till Vollmer",
+                "imageURL": "https://www.mindmeister.com/images/logos/icon_meisterlabs_120.png",
+                "contact": {
+                    "company": "MeisterLabs - The company behind MindMeister and MeisterTask",
+                    "role": "Founder",
+                    "location": "Werner-Eckert-Straße 12, 81829 München, Germany",
+                    "email": "till@meisterlabs.com",
+                    "homepage": "www.meisterlabs.com"
+                },
+                "competencies": "A lot of technical and entrepreneurial skills",
+                "slackusername": "@tvollmer"
             }
         }
     ],

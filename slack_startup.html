@@ -6,11 +6,11 @@
         <script src='https://www.mapz.com/api/static/javascript/lib/typeahead.bundle.js' type='text/javascript'></script>
         <style type="text/css">
 
-         /* Change the position of the zoom buttons */
-         .ol-zoom {
-        	left: 18.8em;
-        	top: 0.5em;
-         }
+  /* Change the position of the zoom buttons */
+  .ol-zoom {
+    left: 15.7em;
+    top: 0.5em;
+  }
   /* ol.mapz.control.Search */
   .mapz-control-search,
   .mapz-control-search:hover {
@@ -178,12 +178,17 @@
             color:#ef8214;
          }
 
-         /* styling for devices with screen width less than 575px */
-         @media (max-width: 575px) {
-           #sticky-overlay {
-              width: 200px;
-              padding: 10px;
+         /* styling for media devices */
+         @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+           .ol-zoom {
+              left: 0.5em;
+              top: 0.5em;
            }
+           
+           #sticky-overlay {
+              display: none;
+           }
+           
            #sticky-overlay h4 {
               font-size: 18px;
               margin-bottom: 5px;
@@ -346,8 +351,8 @@
             width: 260px;
          }
 
-         /* styling for devices with screen width less than 575px */
-         @media (max-width: 575px) {
+         /* styling for media devices */
+         @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
            .ol-popup {
               width: 330px;
               left: -25px;
@@ -465,13 +470,13 @@
       <div class="template-container">
       <!-- Structure of the detail-template -->
         <div class="detail-template">
-          <h4 class="name"></h4>
+          <h4 class="slackusername"></h4>
           <div class="contact">
+            <div>
+              <span class="name"></span>
+            </div>
             <div class="role-container">
               <span class="role"></span>
-            </div>
-            <div>
-              <span class="slackusername"></span>
             </div>
             <h5>Competencies</h5>
             <div>
@@ -490,10 +495,10 @@
       <!-- Structure of the overview-template -->
         <div class="overview-template">
           <div>
-            <h5 class="name"></h5>
+            <h5 class="slackusername"></h5>
             <div>
-              <i>Slack Username:</i>
-              <span class="slackusername"></span>
+              <i>Name:</i>
+              <span class="name"></span>
             </div>
             <div>
               <i>Competencies:</i>
@@ -566,7 +571,7 @@
       var clusters = new ol.layer.Vector({
         // Wrap vector source in cluster source
         source: new ol.source.Cluster({
-          distance: 40,
+          distance: 50,
           source: vectorSource
         }),
         // Define cluster style
@@ -656,7 +661,7 @@
       });
 
       map.getView().fit(ol.proj.transformExtent(
-        [-23.335302, 37.780334,39.110987, 62.18144],
+        [-23.335302, 37.780334, 39.110987, 62.18144],
         'EPSG:4326', 'EPSG:3857'
       ), map.getSize());
 
