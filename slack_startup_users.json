@@ -579,7 +579,37 @@
                 "competencies": "A lot of technical and entrepreneurial skills",
                 "slackusername": "@tvollmer"
             }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {   
+                "coordinates": [
+                    13.39476,
+                    52.53704
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Eckart Burgwedel",
+                "imageURL": "https://uberchord.com/wp-content/uploads/Assets/Logo/logo_5.png",
+                "contact": {
+                    "company": "Uberchord Engineering",
+                    "role": "Co-founder and CEO",
+                    "location": "c/o Factory Berlin, Rheinsberger Straße 76/77, 10115 Berlin, Germany",
+                    "email": "eckart@uberchord.com",
+                    "homepage": "www.uberchord.com"
+                },
+                "competencies": "Chief Excitement Officer",
+                "slackusername": "@uberchord"
+            }
         }
+
     ],
     "properties": {
         "bbox": "8.155937,49.608688,8.165501,49.612154",
