@@ -39,6 +39,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    -118.23238,
+                    34.04597
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Boris Goncharov",
+                "imageURL": "http://moosetank.com/assets/img/logo%20copy.png",
+                "contact": {
+                    "company": "Moosetank",
+                    "role": "Co-founder",
+                    "location": "300 S Santa Fe Ave 674, Los Angeles, CA 90013, USA",
+                    "email": "boris@moosetank.com",
+                    "homepage": "moosetank.com"
+                },
+                "competencies": "Design, copywriting, prototyping, basic coding.",
+                "slackusername": "@bobbatron"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     9.72047,
                     52.36823
                 ],
@@ -416,6 +445,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    37.64571,
+                    55.75515
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Vad Mikhalyov",
+                "imageURL": "co.png",
+                "contact": {
+                    "company": "Codesign.io | The simplest feedback tool",
+                    "role": "CEO",
+                    "location": "Moscow, Russia",
+                    "email": "vad@codesign.io",
+                    "homepage": "codesign.io"
+                },
+                "competencies": "UX, Marketing, Sales, Traction, Growth",
+                "slackusername": "@mikhalyov"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     9.942133,
                     53.544398
                 ],
@@ -530,6 +588,64 @@
                 },
                 "type": "name"
             },
+            "geometry": {
+                "coordinates": [
+                    -86.79279,
+                    36.14883
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Stuart Brent",
+                "imageURL": "nologo.png",
+                "contact": {
+                    "company": "Vacord Screen Printing, Ignite Your Match, Startup Resources, pre-launch.io",
+                    "role": "Founder",
+                    "location": "2142 Acklen Ave, Nashville TN 37215, USA",
+                    "email": "sbrent@gmail.com",
+                    "homepage": "vacord.com"
+                },
+                "competencies": "Front end development",
+                "slackusername": "@Stuart startupresources.io"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    -73.9879100,
+                    40.74192
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Susan Solomon",
+                "imageURL": "nologo.png",
+                "contact": {
+                    "company": "Drive-Thru Branding",
+                    "role": "Co-Founder, CEO",
+                    "location": "New York, NY, USA",
+                    "email": "susan.solomon@drivethrubranding.com",
+                    "homepage": "drivethrubranding.com"
+                },
+                "competencies": "Marketing, Business Strategy, Operations",
+                "slackusername": "@susansolomon"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
             "geometry": {   
                 "coordinates": [
                     100.58117,
@@ -609,7 +725,6 @@
                 "slackusername": "@uberchord"
             }
         }
-
     ],
     "properties": {
         "bbox": "8.155937,49.608688,8.165501,49.612154",
