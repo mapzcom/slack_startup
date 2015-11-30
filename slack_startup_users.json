@@ -155,6 +155,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    16.3533872,
+                    48.2092026
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "David Trattnig",
+                "imageURL": "http://subsquare.at/singleLogoBig.gif",
+                "contact": {
+                    "company": "Freelancer (subsquare.at), Co-founder of Webjets (webjets.io)",
+                    "role": "Co-founder / Software Engineer",
+                    "location": "Josefstädter Straße, 1080 Vienna, Austria",
+                    "email": "david.trattnig@gmail.com",
+                    "homepage": "subsquare.at"
+                },
+                "competencies": "Development, Software Architecture, Product Engineering, Lean & Agile JavaScript, CoffeeScript, Firebase, AngularJS, CSS3, HTML5, Java EE, Grails, Groovy",
+                "slackusername": "@david.trattnig"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     9.933884,
                     51.533170
                 ],
