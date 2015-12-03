@@ -590,6 +590,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    77.2197222,
+                    28.6327778
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Rubin Sabharwal",
+                "imageURL": "analyzo.png",
+                "contact": {
+                    "company": "Analyzo.com",
+                    "role": "Co-Founder",
+                    "location": "21 Kasturba Gandhi Marg, New Delhi-110001, India",
+                    "email": "rubin@analyzo.com",
+                    "homepage": "analyzo.com"
+                },
+                "competencies": "Design, UX, Business Development, Marketing, Market Research",
+                "slackusername": "@rubin_analyzo"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     11.78659,
                     49.63958
                 ],
