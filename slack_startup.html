@@ -184,7 +184,7 @@
               left: 0.5em;
               top: 0.5em;
            }
-           
+           /* styles the list */
            #sticky-overlay {
               display: none;
            }
@@ -210,6 +210,7 @@
               height: 12px;
            }
          }
+         /* end (styling for media devices) */
 
          /* styles the popup container */
          .ol-popup {
@@ -354,7 +355,7 @@
          /* styling for media devices */
          @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
            .ol-popup {
-              width: 330px;
+              width: 200px;
               left: -25px;
               padding: 10px;
            }
@@ -368,74 +369,51 @@
            }
 
            .ol-popup .close-button {
-              font-size: 10px;
+              font-size: 13px;
+              margin-top: 5px;
+              margin-right: 5px;
            }
 
+		   /* styling slackusername for detail-popup */
            #popup-content h4 {
-              font-size: 10px;
-              margin-bottom: 0;
+              font-size: 18px;
            }
 
+		   /* styling headlines "Competencies", "Contact" for detail-popup */
            #popup-content h5 {
-              font-size: 9px;
-              margin-bottom: 0;
+              font-size: 15px;
+              margin-top: 10px;
            }
 
-           #popup-content p {
-              margin-bottom: 5px;
-           }
-
+           /* styling "Competencies", "Contact" for detail-popup */
            #popup-content p,
            #popup-content i,
            #popup-content span,
            #popup-content .contact div,
            #popup-content a {
-              font-size: 9px;
-              line-height: 12px;
+              font-size: 13px;
+              line-height: 16px;
            }
 
-           #popup-content.detail a {
-              margin-top: 2px;
-           }
-
-           #popup-content img {
-              margin-right: 10px;
-           }
-
+		   /* styling contact box for detail-popup */
            #popup-content.detail .contact {
-              width: 180px;
-              line-height: 12px;
+              width: 200px;
            }
 
-           #popup-content.overview h5,
-           #popup-content.overview .contact div {
-              margin-bottom: 7px;
-           }
-
-           #popup-content.detail .contact div {
-              display: inline-block;
-           }
-
-           #popup-content.detail div.phone-container,
-           #popup-content.detail div.fax-container {
-              display: block;
-           }
-
+           /* styling slackusername for overview-popup */
            #popup-content.overview h5 {
-              font-size: 10px;
+              font-size: 15px;
+              margin-top: 0px;
+              margin-bottom: 0px;
            }
-
-           #popup-content.detail .image {
-              width: 120px;
-              height: auto;
-           }
-
-           #popup-content .logo {
-              height: 12px;
-              bottom: 34px;
-              right: 20px;
+           
+           #popup-content.overview {
+              width: 200px;
+              max-height: 200px;
            }
          }
+         /* end (styling for media devices) */
+
          .slackdemomap {
             height: 100%;
             width: 100%;
@@ -659,9 +637,9 @@
           maxZoom: 18
         })
       });
-
+      // Define BoundingBox for map view
       map.getView().fit(ol.proj.transformExtent(
-        [-23.335302, 37.780334, 39.110987, 62.18144],
+        [-125.418463, -43.876829, 128.585443, 73.660769],
         'EPSG:4326', 'EPSG:3857'
       ), map.getSize());
 
@@ -858,7 +836,7 @@
             });
             var coordinates = $(this).data('coordinates');
             map.getView().setCenter(coordinates);
-            map.getView().setZoom(5);
+            map.getView().setZoom(11);
           });
           // add finished template to html overlay
           jQuery(stickyOverlayElement).append(listTemplate);
