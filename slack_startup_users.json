@@ -126,6 +126,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    103.85022,
+                    1.37574
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Derrick Mah",
+                "imageURL": "nologo.png",
+                "contact": {
+                    "company": "Past: Psychkick pte. ltd.",
+                    "role": "(ex) Co-founder",
+                    "location": "Singapore 550514",
+                    "email": "derrickdm2088@gmail.com",
+                    "homepage": ""
+                },
+                "competencies": "Psychology, Statistics, SPSS",
+                "slackusername": "@derrickmah"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     7.08989,
                     50.74363
                 ],
