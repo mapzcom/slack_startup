@@ -735,6 +735,35 @@
             },
             "geometry": {   
                 "coordinates": [
+                    11.58455,
+                    48.13915
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Thomas Hartmann",
+                "imageURL": "nologo.png",
+                "contact": {
+                    "company": "str84wd products",
+                    "role": "CEO",
+                    "location": "Munich, Germany",
+                    "email": "thomas@str84wd.com",
+                    "homepage": "www.str84wd.com"
+                },
+                "competencies": "Lean Startup for Corportates",
+                "slackusername": "@thomashartmann"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {   
+                "coordinates": [
                     100.58117,
                     13.73063
                 ],
