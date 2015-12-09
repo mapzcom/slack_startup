@@ -46,7 +46,7 @@
             },
             "properties": {
                 "name": "Boris Goncharov",
-                "imageURL": "http://moosetank.com/assets/img/logo%20copy.png",
+                "imageURL": "moosetank.png",
                 "contact": {
                     "company": "Moosetank",
                     "role": "Co-founder",
@@ -75,7 +75,7 @@
             },
             "properties": {
                 "name": "Björn Zinkler",
-                "imageURL": "http://zinkler-brandes.com/images/ui/zinklerbrandes_logo.png",
+                "imageURL": "zinklerbrandes.png",
                 "contact": {
                     "company": "Zinkler & Brandes",
                     "role": "Entrepreneur/CEO",
@@ -191,7 +191,7 @@
             },
             "properties": {
                 "name": "David Trattnig",
-                "imageURL": "http://subsquare.at/singleLogoBig.gif",
+                "imageURL": "subsquare.gif",
                 "contact": {
                     "company": "Freelancer (subsquare.at), Co-founder of Webjets (webjets.io)",
                     "role": "Co-founder / Software Engineer",
@@ -271,6 +271,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    -122.078766,
+                    37.392570
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Jennifer Ruffner",
+                "imageURL": "kifi.jpg",
+                "contact": {
+                    "company": "Kifi",
+                    "role": "Head of Product",
+                    "location": "278 Hope Street Ste D  Mountain View, CA 94141, USA",
+                    "email": "jenniferruffner@gmail.com",
+                    "homepage": "www.kifi.com"
+                },
+                "competencies": "Startups, optimization, web content, knowledge management, communication tools",
+                "slackusername": "@JenRuffner"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     -122.41948,
                     37.77958
                 ],
@@ -278,7 +307,7 @@
             },
             "properties": {
                 "name": "Kevin Weber",
-                "imageURL": "https://www.gravatar.com/avatar/9d876cfd1fed468f71c84d26ca0e9e33?d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536&s=172",
+                "imageURL": "kevin_weber.jpeg",
                 "contact": {
                     "company": "",
                     "role": "",
@@ -307,7 +336,7 @@
             },
             "properties": {
                 "name": "Dr. Christian Lackas",
-                "imageURL": "https://www.invicro.com/wp-content/uploads/2013/06/new-logo-invicro-FC.png",
+                "imageURL": "invicro.png",
                 "contact": {
                     "company": "inviCRO",
                     "role": "Co-Founder, Managing Partner",
@@ -336,7 +365,7 @@
             },
             "properties": {
                 "name": "Leon Pals",
-                "imageURL": "http://startupfoundation.co/wp-content/uploads/2014/12/startup1.png",
+                "imageURL": "startup_foundation.png",
                 "contact": {
                     "company": "Startup Foundation",
                     "role": "Chairman, founder",
@@ -394,7 +423,7 @@
             },
             "properties": {
                 "name": "Matthias Breddin",
-                "imageURL": "https://www.lunetics.com/lunetics_logo.png",
+                "imageURL": "lunetics.png",
                 "contact": {
                     "company": "Lunetics",
                     "role": "",
@@ -452,7 +481,7 @@
             },
             "properties": {
                 "name": "Markus Schwed",
-                "imageURL": "https://www.company-mood.com/assets/logos/company_mood_logo@2.png",
+                "imageURL": "company_mood_logo@2.png",
                 "contact": {
                     "company": "CompanyMood",
                     "role": "Co-Founder & CEO",
@@ -597,7 +626,7 @@
             },
             "properties": {
                 "name": "Orlando Policicchio",
-                "imageURL": "https://www.company-mood.com/assets/logos/company_mood_logo@2.png",
+                "imageURL": "company_mood_logo@2.png",
                 "contact": {
                     "company": "CompanyMood",
                     "role": "Co-Founder",
@@ -655,7 +684,7 @@
             },
             "properties": {
                 "name": "David Brown",
-                "imageURL": "https://www.thebgn.com/wp-content/uploads/2015/02/Site_Logo.png",
+                "imageURL": "bgn.png",
                 "contact": {
                     "company": "The BGN LLC",
                     "role": "Founder",
@@ -667,6 +696,35 @@
                 "slackusername": "@S33br0wnb0x"
             }
         },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    -122.69353,
+                    45.53266
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Scott Manning",
+                "imageURL": "voomago.png",
+                "contact": {
+                    "company": "voomago.com",
+                    "role": "Director of Marketing",
+                    "location": "Portland, OR, USA",
+                    "email": "scott@voomago.com",
+                    "homepage": "voomago.com"
+                },
+                "competencies": "All things marketing + sysadmin + front end dev",
+                "slackusername": "@scotto"
+            }
+        },        
         {
             "type": "Feature",
             "crs": {
@@ -771,7 +829,7 @@
             },
             "properties": {
                 "name": "Tobias Mühl",
-                "imageURL": "https://i.imgur.com/K4FjBjm.jpg",
+                "imageURL": "tobias_muehl.jpg",
                 "contact": {
                     "company": "",
                     "role": "",
@@ -800,7 +858,7 @@
             },
             "properties": {
                 "name": "Till Vollmer",
-                "imageURL": "https://www.mindmeister.com/images/logos/icon_meisterlabs_120.png",
+                "imageURL": "meisterlabs.png",
                 "contact": {
                     "company": "MeisterLabs - The company behind MindMeister and MeisterTask",
                     "role": "Founder",
@@ -829,7 +887,7 @@
             },
             "properties": {
                 "name": "Eckart Burgwedel",
-                "imageURL": "https://uberchord.com/wp-content/uploads/Assets/Logo/logo_5.png",
+                "imageURL": "uberchord.png",
                 "contact": {
                     "company": "Uberchord Engineering",
                     "role": "Co-founder and CEO",
