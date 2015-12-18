@@ -17,7 +17,7 @@
             },
             "properties": {
                 "name": "Alexander Korenevski",
-                "imageURL": "whitescape.png",
+                "imageURL": "logos/whitescape.png",
                 "contact": {
                     "company": "Whitescape",
                     "role": "CEO",
@@ -46,7 +46,7 @@
             },
             "properties": {
                 "name": "Boris Goncharov",
-                "imageURL": "moosetank.png",
+                "imageURL": "logos/moosetank.png",
                 "contact": {
                     "company": "Moosetank",
                     "role": "Co-founder",
@@ -75,7 +75,7 @@
             },
             "properties": {
                 "name": "Björn Zinkler",
-                "imageURL": "zinklerbrandes.png",
+                "imageURL": "logos/zinklerbrandes.png",
                 "contact": {
                     "company": "Zinkler & Brandes",
                     "role": "Entrepreneur/CEO",
@@ -104,7 +104,7 @@
             },
             "properties": {
                 "name": "Christoph Jung",
-                "imageURL": "nologo.png",
+                "imageURL": "logos/nologo.png",
                 "contact": {
                     "company": "",
                     "role": "Student, Startup Enthusiast",
@@ -133,7 +133,7 @@
             },
             "properties": {
                 "name": "Derrick Mah",
-                "imageURL": "nologo.png",
+                "imageURL": "logos/nologo.png",
                 "contact": {
                     "company": "Past: Psychkick pte. ltd.",
                     "role": "(ex) Co-founder",
@@ -162,7 +162,7 @@
             },
             "properties": {
                 "name": "David Schmithüsen",
-                "imageURL": "nologo.png",
+                "imageURL": "logos/nologo.png",
                 "contact": {
                     "company": "Dipl. Inform David Schmithüsen",
                     "role": "Founder",
@@ -191,7 +191,7 @@
             },
             "properties": {
                 "name": "David Trattnig",
-                "imageURL": "subsquare.gif",
+                "imageURL": "logos/subsquare.gif",
                 "contact": {
                     "company": "Freelancer (subsquare.at), Co-founder of Webjets (webjets.io)",
                     "role": "Co-founder / Software Engineer",
@@ -220,7 +220,7 @@
             },
             "properties": {
                 "name": "Farhad Omid",
-                "imageURL": "nologo.png",
+                "imageURL": "logos/nologo.png",
                 "contact": {
                     "company": "Eddyson GmbH",
                     "role": "Software Engineer",
@@ -249,7 +249,7 @@
             },
             "properties": {
                 "name": "Giulia Cian Seren",
-                "imageURL": "nologo.png",
+                "imageURL": "logos/nologo.png",
                 "contact": {
                     "company": "Jobbatical + Freelance",
                     "role": "Head of Sales",
@@ -278,7 +278,7 @@
             },
             "properties": {
                 "name": "Jennifer Ruffner",
-                "imageURL": "kifi.jpg",
+                "imageURL": "logos/kifi.jpg",
                 "contact": {
                     "company": "Kifi",
                     "role": "Head of Product",
@@ -307,7 +307,7 @@
             },
             "properties": {
                 "name": "Kevin Weber",
-                "imageURL": "kevin_weber.jpeg",
+                "imageURL": "logos/kevin_weber.jpeg",
                 "contact": {
                     "company": "",
                     "role": "",
@@ -336,7 +336,7 @@
             },
             "properties": {
                 "name": "Dr. Christian Lackas",
-                "imageURL": "invicro.png",
+                "imageURL": "logos/invicro.png",
                 "contact": {
                     "company": "inviCRO",
                     "role": "Co-Founder, Managing Partner",
@@ -365,7 +365,7 @@
             },
             "properties": {
                 "name": "Leon Pals",
-                "imageURL": "startup_foundation.png",
+                "imageURL": "logos/startup_foundation.png",
                 "contact": {
                     "company": "Startup Foundation",
                     "role": "Chairman, founder",
@@ -394,7 +394,7 @@
             },
             "properties": {
                 "name": "Leon Lim Jiu He",
-                "imageURL": "nologo.png",
+                "imageURL": "logos/nologo.png",
                 "contact": {
                     "company": "",
                     "role": "Founder",
@@ -423,7 +423,7 @@
             },
             "properties": {
                 "name": "Matthias Breddin",
-                "imageURL": "lunetics.png",
+                "imageURL": "logos/lunetics.png",
                 "contact": {
                     "company": "Lunetics",
                     "role": "",
@@ -481,7 +481,7 @@
             },
             "properties": {
                 "name": "Markus Schwed",
-                "imageURL": "company_mood_logo@2.png",
+                "imageURL": "logos/company_mood_logo@2.png",
                 "contact": {
                     "company": "CompanyMood",
                     "role": "Co-Founder & CEO",
@@ -510,7 +510,7 @@
             },
             "properties": {
                 "name": "Max Ott",
-                "imageURL": "nologo.png",
+                "imageURL": "logos/nologo.png",
                 "contact": {
                     "company": "Made for Use",
                     "role": "",
@@ -539,7 +539,7 @@
             },
             "properties": {
                 "name": "Vad Mikhalyov",
-                "imageURL": "co.png",
+                "imageURL": "logos/co.png",
                 "contact": {
                     "company": "Codesign.io | The simplest feedback tool",
                     "role": "CEO",
@@ -568,7 +568,7 @@
             },
             "properties": {
                 "name": "Olcay Hasanoglu",
-                "imageURL": "nologo.png",
+                "imageURL": "logos/nologo.png",
                 "contact": {
                     "company": "codecentric AG",
                     "role": "Agile Programm Manager - Coach",
@@ -626,7 +626,7 @@
             },
             "properties": {
                 "name": "Orlando Policicchio",
-                "imageURL": "company_mood_logo@2.png",
+                "imageURL": "logos/company_mood_logo@2.png",
                 "contact": {
                     "company": "CompanyMood",
                     "role": "Co-Founder",
@@ -655,7 +655,7 @@
             },
             "properties": {
                 "name": "Rubin Sabharwal",
-                "imageURL": "analyzo.png",
+                "imageURL": "logos/analyzo.png",
                 "contact": {
                     "company": "Analyzo.com",
                     "role": "Co-Founder",
@@ -684,7 +684,7 @@
             },
             "properties": {
                 "name": "David Brown",
-                "imageURL": "bgn.png",
+                "imageURL": "logos/bgn.png",
                 "contact": {
                     "company": "The BGN LLC",
                     "role": "Founder",
@@ -713,7 +713,7 @@
             },
             "properties": {
                 "name": "Scott Manning",
-                "imageURL": "voomago.png",
+                "imageURL": "logos/voomago.png",
                 "contact": {
                     "company": "voomago.com",
                     "role": "Director of Marketing",
@@ -742,7 +742,7 @@
             },
             "properties": {
                 "name": "Stuart Brent",
-                "imageURL": "nologo.png",
+                "imageURL": "logos/nologo.png",
                 "contact": {
                     "company": "Vacord Screen Printing, Ignite Your Match, Startup Resources, pre-launch.io",
                     "role": "Founder",
@@ -771,7 +771,7 @@
             },
             "properties": {
                 "name": "Susan Solomon",
-                "imageURL": "nologo.png",
+                "imageURL": "logos/nologo.png",
                 "contact": {
                     "company": "Drive-Thru Branding",
                     "role": "Co-Founder, CEO",
@@ -800,7 +800,7 @@
             },
             "properties": {
                 "name": "Thomas Hartmann",
-                "imageURL": "nologo.png",
+                "imageURL": "logos/nologo.png",
                 "contact": {
                     "company": "str84wd products",
                     "role": "CEO",
@@ -822,6 +822,35 @@
             },
             "geometry": {   
                 "coordinates": [
+                    9.92451,
+                    51.52638
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Tobias Hieb",
+                "imageURL": "logos/nologo.png",
+                "contact": {
+                    "company": "TeamGrid UG",
+                    "role": "Head of Product",
+                    "location": "Leinestraße 37, 37073 Göttingen, Germany",
+                    "email": "tobias.hieb@teamgridapp.com",
+                    "homepage": "www.teamgridapp.com"
+                },
+                "competencies": "UI/UX Design",
+                "slackusername": "@tobiashieb"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {   
+                "coordinates": [
                     100.58117,
                     13.73063
                 ],
@@ -829,7 +858,7 @@
             },
             "properties": {
                 "name": "Tobias Mühl",
-                "imageURL": "tobias_muehl.jpg",
+                "imageURL": "logos/tobias_muehl.jpg",
                 "contact": {
                     "company": "",
                     "role": "",
@@ -858,7 +887,7 @@
             },
             "properties": {
                 "name": "Till Vollmer",
-                "imageURL": "meisterlabs.png",
+                "imageURL": "logos/meisterlabs.png",
                 "contact": {
                     "company": "MeisterLabs - The company behind MindMeister and MeisterTask",
                     "role": "Founder",
@@ -887,7 +916,7 @@
             },
             "properties": {
                 "name": "Eckart Burgwedel",
-                "imageURL": "uberchord.png",
+                "imageURL": "logos/uberchord.png",
                 "contact": {
                     "company": "Uberchord Engineering",
                     "role": "Co-founder and CEO",

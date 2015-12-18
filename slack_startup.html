@@ -559,7 +559,7 @@
           // Clustered features containing only one feature are treated as normal features
             return [new ol.style.Style({
                image: new ol.style.Icon({
-                 src: 'slack_user.svg',
+                 src: 'markers/slack_user.svg',
                  scale: 2.0,
                  // set anchor for icon
                  // anchor: [0, 0],
@@ -572,7 +572,7 @@
             return [new ol.style.Style({
                geometry: feature.getGeometry(),
                image: new ol.style.Icon({
-                 src: 'slack_cluster.svg',
+                 src: 'markers/slack_cluster.svg',
                  scale: 2.0,
                }),
                text: new ol.style.Text({
@@ -620,7 +620,7 @@
             source: resultSource,
             style: new ol.style.Style({
               image: new ol.style.Icon(({
-              src: 'slack_user_search.svg',
+              src: 'markers/slack_user_search.svg',
               scale: 2.0,
               // anchor: [0, 0],
               // anchorYUnits: 'pixels',
