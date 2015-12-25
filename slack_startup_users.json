@@ -68,6 +68,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    -118.45940,
+                    33.97896
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Brian Swichkow",
+                "imageURL": "logos/The-Ghost-Influence-Podcast-How-Viral-Happens-On-Reddit-Small.jpg",
+                "contact": {
+                    "company": "Ghost Influence",
+                    "role": "Founder & CEO",
+                    "location": "Marina del Rey, California 90202, USA",
+                    "email": "brian@ghostinfluence.com",
+                    "homepage": "ghostinfluence.com"
+                },
+                "competencies": "Software Development, Project Management, Bootstrapping",
+                "slackusername": "@brian.swichkow"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     9.72047,
                     52.36823
                 ],
