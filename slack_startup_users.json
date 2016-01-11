@@ -10,6 +10,180 @@
             },
             "geometry": {
                 "coordinates": [
+                    -90.36,
+                    51.52819
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Fred Rivett",
+                "imageURL": "logos/nologo.png",
+                "contact": {
+                    "company": "We Are Contrast",
+                    "role": "Co-Founder",
+                    "location": "",
+                    "email": "fred@wearecontrast.com",
+                    "homepage": "wearecontrast.com"
+                },
+                "competencies": "Web Design, Front End Developer",
+                "slackusername": "@fredrivett"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    30.520737,
+                    50.445008
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Anton Skorniakov",
+                "imageURL": "logos/nologo.png",
+                "contact": {
+                    "company": "Alterplay.com",
+                    "role": "Partner, Head of Design",
+                    "location": "Kiev, Ukraine",
+                    "email": "outfoxer@gmail.com",
+                    "homepage": "www.alterplay.com"
+                },
+                "competencies": "No comment ;-)",
+                "slackusername": "@outfoxer"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    15.266221,
+                    46.23476
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Dejan Gajsek",
+                "imageURL": "logos/nologo.png",
+                "contact": {
+                    "company": "VIAR, Edgar Tells, PovioLabs",
+                    "role": "Growth Hacker, Marketing",
+                    "location": "Celje, Slovenia",
+                    "email": "dgajsek@gmail.com",
+                    "homepage": "dgajsek.com"
+                },
+                "competencies": "Growth, Social Media, Hustle",
+                "slackusername": "@dejan"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    0.12508,
+                    52.20422
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Jake Peters",
+                "imageURL": "logos/contentacle.png",
+                "contact": {
+                    "company": "Contentacle",
+                    "role": "CEO",
+                    "location": "Cambridge, United Kingdom",
+                    "email": "jake@contentacle.com",
+                    "homepage": "contentacle.com"
+                },
+                "competencies": "Web/iOS Development, Content, SEO, Marketing",
+                "slackusername": "@jakeapeters"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    -34.87202,
+                    -7.13619
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Diógenes Hermínio",
+                "imageURL": "logos/streetbarz.png",
+                "contact": {
+                    "company": "StreetBarz",
+                    "role": "CEO",
+                    "location": "Rua Major Jader de Carvalho Nunes, Joao Pessoa, PB Brazil",
+                    "email": "diofeher@gmail.com",
+                    "homepage": "streetbarz.com"
+                },
+                "competencies": "Development, Marketing, Finance",
+                "slackusername": "@diofeher"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    -3.93995,
+                    51.61930
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Elliot Thomas",
+                "imageURL": "logos/nologo.png",
+                "contact": {
+                    "company": "Skippr",
+                    "role": "Founder, CEO",
+                    "location": "11 Wind Street, Swansea, Wales, United Kingdom, SA1 1DP",
+                    "email": "elliot@getskippr.com",
+                    "homepage": "www.getskippr.com"
+                },
+                "competencies": "Digital marketing specifically Instagram marketing.",
+                "slackusername": "@ElliotRThomas"
+            }
+        },
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     24.82105,
                     59.42650
                 ],
