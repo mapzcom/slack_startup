@@ -10,8 +10,8 @@
             },
             "geometry": {
                 "coordinates": [
-                    -9.036,
-                    51.52819
+                    -0.090213,
+                    51.528622
                 ],
                 "type": "Point"
             },
@@ -21,7 +21,7 @@
                 "contact": {
                     "company": "We Are Contrast",
                     "role": "Co-Founder",
-                    "location": "",
+                    "location": "London, Great Britain",
                     "email": "fred@wearecontrast.com",
                     "homepage": "wearecontrast.com"
                 },
