@@ -10,6 +10,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    4.4894078993750695,
+                    51.90717539476691
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Marie-Jose Vd Boomgaard",
+                "imageURL": "logos/nologo.png",
+                "contact": {
+                    "company": "Kpn New business",
+                    "role": "Liaison mgr start ups",
+                    "location": "Wilhelminakade 123, Rotterdam, Netherlands",
+                    "email": "marie-jose.vandenboomgaard@kpn.com",
+                    "homepage": "kpn.com"
+                },
+                "competencies": "Marketing, sales, getting things done, creating good vibes",
+                "slackusername": "@mj"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     -0.090213,
                     51.528622
                 ],
