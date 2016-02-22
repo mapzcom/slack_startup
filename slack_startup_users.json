@@ -1217,7 +1217,29 @@
                 "competencies": "A lot of technical and entrepreneurial skills",
                 "slackusername": "@tvollmer"
             }
-        },
+            },
+          "type": "Feature",
+          "properties": {
+             "name": "Stephen Smith",
+                    "imageURL": "https://pbs.twimg.com/profile_images/665681699347390466/XvqL6h2v.jpg",
+                    "contact": {
+                        "company": "Mapsmith",
+                        "role": "Chief Cartographer",
+                        "location": "Burlington, Vermont",
+                        "email": "stephen@mapsmith.net",
+                        "homepage": "www.mapsmith.net"
+                    },
+                    "competencies": "Cartography, map design, web map development, mapping app development, data management, data processing, data analysis",
+                    "slackusername": "@themapsmith"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -73.2,
+              44.45
+            ]
+          }
+        }
         {
             "type": "Feature",
             "crs": {
@@ -1248,6 +1270,34 @@
             }
         }
     ],
+    "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    11.666764698376,
+                    48.0616981448878
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Andreas Stoll",
+                "imageURL": "logos/nologo.png",
+                "contact": {
+                    "company": "Stoerkens GmbH",
+                    "role": "Founder, CEO",
+                    "location": "Karl-Birzer-Str. 7, 85521 Ottobrunn, Germany",
+                    "email": "andreas.stoll@explainr.de",
+                    "homepage": "www.explainr.de"
+                },
+                "competencies": "Development, Marketing, Sales",
+                "slackusername": "@stollz"
+            }
+        }
     "properties": {
         "bbox": "8.155937,49.608688,8.165501,49.612154",
         "layername": "osm"
