@@ -1270,34 +1270,6 @@
             }
         }
     ],
-    "type": "Feature",
-            "crs": {
-                "properties": {
-                    "name": "EPSG:4326"
-                },
-                "type": "name"
-            },
-            "geometry": {
-                "coordinates": [
-                    11.666764698376,
-                    48.0616981448878
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "name": "Andreas Stoll",
-                "imageURL": "logos/nologo.png",
-                "contact": {
-                    "company": "Stoerkens GmbH",
-                    "role": "Founder, CEO",
-                    "location": "Karl-Birzer-Str. 7, 85521 Ottobrunn, Germany",
-                    "email": "andreas.stoll@explainr.de",
-                    "homepage": "www.explainr.de"
-                },
-                "competencies": "Development, Marketing, Sales",
-                "slackusername": "@stollz"
-            }
-        }
     "properties": {
         "bbox": "8.155937,49.608688,8.165501,49.612154",
         "layername": "osm"
