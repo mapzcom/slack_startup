@@ -1217,7 +1217,29 @@
                 "competencies": "A lot of technical and entrepreneurial skills",
                 "slackusername": "@tvollmer"
             }
-        },
+            },
+          "type": "Feature",
+          "properties": {
+             "name": "Stephen Smith",
+                    "imageURL": "https://pbs.twimg.com/profile_images/665681699347390466/XvqL6h2v.jpg",
+                    "contact": {
+                        "company": "Mapsmith",
+                        "role": "Chief Cartographer",
+                        "location": "Burlington, Vermont",
+                        "email": "stephen@mapsmith.net",
+                        "homepage": "www.mapsmith.net"
+                    },
+                    "competencies": "Cartography, map design, web map development, mapping app development, data management, data processing, data analysis",
+                    "slackusername": "@themapsmith"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -73.2,
+              44.45
+            ]
+          }
+        }
         {
             "type": "Feature",
             "crs": {
