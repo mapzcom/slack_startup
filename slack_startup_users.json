@@ -10,6 +10,93 @@
             },
             "geometry": {
                 "coordinates": [
+                    11.666764698376,
+                    48.0616981448878
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Andreas Stoll",
+                "imageURL": "logos/nologo.png",
+                "contact": {
+                    "company": "Stoerkens GmbH",
+                    "role": "Founder, CEO",
+                    "location": "Karl-Birzer-Str. 7, 85521 Ottobrunn, Germany",
+                    "email": "andreas.stoll@explainr.de",
+                    "homepage": "www.explainr.de"
+                },
+                "competencies": "Development, Marketing, Sales",
+                "slackusername": "@stollz"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    139.70830142498000,
+                    35.642484054916100
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Asagi/Maeda",
+                "imageURL": "logos/hunch.png",
+                "contact": {
+                    "company": "Hunch Inc.",
+                    "role": "Founder",
+                    "location": "#201 2-16-12 Ebisu-Minami Shibuya, 150-0022 Tokyo, Japan",
+                    "email": "asagi@hunch.co.jp",
+                    "homepage": "hunch.tokyo"
+                },
+                "competencies": "Project Manager",
+                "slackusername": "@asagi"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    105.82990,
+                    21.00650
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Son Nguyen",
+                "imageURL": "logos/nologo.png",
+                "contact": {
+                    "company": "SmartPla.net",
+                    "role": "Founder",
+                    "location": "A1 Ngo 45 Chua Boc Dong Da, Hanoi 100000, Vietnam",
+                    "email": "cso@smartpla.net",
+                    "homepage": "smartPla.net"
+                },
+                "competencies": "Marketing, Writing, Community Development, Lean Startup, Personal Development and Consciousness Training",
+                "slackusername": "@SonNguyen"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     4.4894078993750695,
                     51.90717539476691
                 ],
