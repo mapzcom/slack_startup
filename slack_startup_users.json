@@ -39,6 +39,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    -73.430858,
+                    41.126947
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Mark Progano",
+                "imageURL": "logos/happenst.png",
+                "contact": {
+                    "company": "Happen St.",
+                    "role": "Founder",
+                    "location": "76 New Canaan Ave, Norwalk, CT 06850, USA",
+                    "email": "mark@happenst.com",
+                    "homepage": "www.happenst.com"
+                },
+                "competencies": "Strategy, Analytics, Dev & Tech, Design & UX",
+                "slackusername": "@mprogano"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     139.70830142498000,
                     35.642484054916100
                 ],
