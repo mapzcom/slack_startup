@@ -10,6 +10,64 @@
             },
             "geometry": {
                 "coordinates": [
+                    -3.64970,
+                    40.43221
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Ruiz Rubén",
+                "imageURL": "logos/nologo.png",
+                "contact": {
+                    "company": "Prextigio.com",
+                    "role": "CEO & Founder",
+                    "location": "Madrid, Spain",
+                    "email": "",
+                    "homepage": "prextigio.com"
+                },
+                "competencies": "No comment ;-)",
+                "slackusername": "@rruiz"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
+                    103.78662,
+                    1.29697
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Alexa Zotova",
+                "imageURL": "logos/nologo.png",
+                "contact": {
+                    "company": "Enchant.vc",
+                    "role": "Investment manager",
+                    "location": "Block 71, Ayer Rajah Crescent, #01-23, Singapore",
+                    "email": "az@ruvento.com",
+                    "homepage": "enchant.vc"
+                },
+                "competencies": "VC, Investment, Marketing, Hardware",
+                "slackusername": "@alexa-zotova"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     11.666764698376,
                     48.0616981448878
                 ],
