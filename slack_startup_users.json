@@ -10,6 +10,35 @@
             },
             "geometry": {
                 "coordinates": [
+                    7.021,
+                    50.627
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "name": "Matthias Bohlen",
+                "imageURL": "logos/scaletonextlevel-logo.png",
+                "contact": {
+                    "company": "Scale to next level",
+                    "role": "Founder",
+                    "location": "Luise-Albertz-Straße 25, 53340 Meckenheim, Germany",
+                    "email": "matthias@scaletonextlevel.com",
+                    "homepage": "scaletonextlevel.com"
+                },
+                "competencies": "Product planning, Web applications, Development, Java",
+                "slackusername": "@matthias.bohlen"
+            }
+        },        
+        {
+            "type": "Feature",
+            "crs": {
+                "properties": {
+                    "name": "EPSG:4326"
+                },
+                "type": "name"
+            },
+            "geometry": {
+                "coordinates": [
                     -3.64970,
                     40.43221
                 ],
